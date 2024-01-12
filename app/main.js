@@ -63,7 +63,7 @@ let iniciarFormato5 = `<div class="rectangle-containerdos">`;
 let finalizarFormato5 = `</div>`;
 
 let verDetalle = (e) =>{
-    window.open(`detalle.html?id=${e.currentTarget.id}`, "_self")
+    window.open(`../detalle.html?id=${e.currentTarget.id}`, "_self")
 }
 
 // leer json  pasar JSON a array
