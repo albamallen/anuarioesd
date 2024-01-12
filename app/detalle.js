@@ -14,7 +14,7 @@ window.onload = () => {
             if (index==articuloID) {
                 let lista = document.querySelector("#articulos");
                 let imagen = articulo.imagenes.split(", ");
-                articuloHTML.innerHTML =  `<div class="container">
+                let htmlcode = `<div class="container">
                 <div class="titulos">
                     <h1 class="h1det">${articulo.titulo}</h1>
                     <h3 class="h3det">${articulo.subtitulo}</h3> 
@@ -50,34 +50,49 @@ window.onload = () => {
                   </div>
                   <div class="row">
                     <h5 class="bold">Docente</h5>
-                    <p>${articulo.nombre_docente}</p>
-                    <p>${articulo.otros_docentes}</p>
-                  </div>
+                    <p>${articulo.nombre_docente}</p>`;
+                if (articulo.otros_docentes) htmlcode += `<p>${articulo.otros_docentes}</p>` 
+                else htmlcode += `<p></p>` ;
+                htmlcode += `</div>
                 </div>
               </div>
               <div class="descripcion">
-                <div class="image-containerdet1">
+              `;
+
+              if (articulo.descripcion && articulo.desc_img1 && imagen[0]) htmlcode += `<div class="image-containerdet1">
                   <p class="pdet">${articulo.descripcion} </br>${articulo.desc_img1}</p>
                   <img class="imgdet1" src="${imagen[0]}" alt="">
-                </div>
-                <div class="image-containerdet">
-                  <img class="imgdet" src="${imagen[1]}" alt="">
-                  <p class="pdet">${articulo.desc_img2}</p>
-                </div>
-                <div class="image-containerdet">
-                  <p class="pdet">${articulo.desc_img3}</p>
-                  <img class="imgdet" src="${imagen[2]}" alt="">
-                </div>
-                <div class="image-containerdet">
-                  <img class="imgdet" src="${imagen[3]}" alt="">
-                  <p class="pdet">${articulo.desc_img4}</p>
-                </div>
-                <div class="image-containerdet">
-                  <p class="pdet">${articulo.desc_img5}</p>
-                  <img class="imgdet" src="${imagen[4]}" alt="">
-                </div>
-              </div>
-              `;
+                </div>`;
+
+              if (imagen[1]) {
+                htmlcode +=`<div class="image-containerdet">
+                <img class="imgdet" src="${imagen[1]}" alt="">`;
+                if (articulo.desc_img2) htmlcode += `<p class="pdet">${articulo.desc_img2}</p>`
+                else htmlcode += `<p class="pdet"></p>`;
+                htmlcode += `</div>`;
+              }
+
+              if (imagen[2]) {
+                htmlcode +=`<div class="image-containerdet">`;
+                if (articulo.desc_img3) htmlcode += `<p class="pdet">${articulo.desc_img3}</p>`
+                else htmlcode += `<p class="pdet"></p>`;
+                htmlcode += `<img class="imgdet" src="${imagen[2]}" alt=""></div>`;
+              }
+              if (imagen[3]) {
+                htmlcode +=`<div class="image-containerdet">
+                <img class="imgdet" src="${imagen[3]}" alt="">`;
+                if (articulo.desc_img4) htmlcode += `<p class="pdet">${articulo.desc_img4}</p>`
+                else htmlcode += `<p class="pdet"></p>`;
+                htmlcode += `</div>`;
+              }
+              if (imagen[4]) {
+                htmlcode +=`<div class="image-containerdet">`;
+                if (articulo.desc_img5) htmlcode += `<p class="pdet">${articulo.desc_img5}</p>`
+                else htmlcode += `<p class="pdet"></p>`;
+                htmlcode += `<img class="imgdet" src="${imagen[4]}" alt=""></div>`;
+              }
+
+              articuloHTML.innerHTML =  htmlcode;
               
             }
         })
