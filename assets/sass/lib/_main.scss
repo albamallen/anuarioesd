@@ -1,0 +1,281 @@
+// Rectangulo grande
+
+.rectangle-containeruno {
+  max-width: 1194px;
+  margin: 20px auto;
+  margin-bottom: 200px;
+}
+
+.rectangleuno {
+    width: 100%;
+    max-width: 1194px;
+    height: 677px;
+    position: relative;
+    overflow: hidden;
+  }
+  
+  img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    @media(max-width: 1200px){
+      margin-left: 0px;
+  }
+    
+  }
+  
+  .text-bottom-left {
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+    color: #fff;
+    h4, h1 {
+      margin: 0;
+    }
+    h4 {
+      color: $primarycolor;
+      margin-left: 10px;
+    }
+    h2 {
+      color: $primarycolor;
+      margin-bottom: 10px;
+      margin-left: 10px;
+    }
+  }
+
+
+// Tres Rectangulos
+
+.rectangle-containertres {
+    max-width: 1440px;
+    margin: 20px auto;
+    // margin-top: 150px;
+    margin-bottom: 200px;
+  }
+  
+  .flex-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    @media(max-width: 1200px){
+      display: flex;
+      flex-direction: column;
+  }
+  }
+  
+  .rectangletres {
+    max-width: 459px;
+    max-height: 545px;
+    position: relative;
+    overflow: cover;
+    margin-bottom: 20px; /* Agrega espacio entre los rectángulos */
+  }
+  
+  img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+  }
+  
+  .text-left {
+    width: 100%;
+    padding: 10px;
+    color: #4F6F5B;
+    text-align: left;
+    h4, h1 {
+      margin: 0;
+      color: $primarycolor;
+    }
+    h4 {
+        color: $primarycolor;
+
+    }
+    h3 {
+        color: $primarycolor;
+        @media(max-width: 1200px){
+          font-size: 30px;
+      }
+    }
+  }
+
+// uno con texto a la derecha
+
+.section-container {
+    max-width: 1440px;
+    margin: 20px auto;
+    display: flex;
+    margin-bottom: 200px;
+    @media(max-width: 1200px){
+      display: flex;
+      flex-direction: column;
+  }
+  }
+  
+  .image-container {
+    max-width: 580px;
+    max-height: 690px;
+    overflow: hidden;
+    @media(max-width: 1200px){
+      margin-left: 20px;
+      margin-right:20px ;
+      max-width: 500px;
+      max-height: 690px;
+  }
+  }
+  
+  img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+  }
+  
+  .text-container {
+    flex: 1;
+    padding: 20px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  
+  h4, h1, p {
+    margin: 0;
+  }
+  
+  h4 {
+    color: $primarycolor;
+  }
+  
+  h1 {
+    color: $primarycolor;
+    @media(max-width: 1200px){
+      font-size: 70px;  }
+  }
+  
+  p {
+    color: $primarycolor;
+  }
+
+ // uno con texto a la izquierda
+
+ .section-container2 {
+    max-width: 1440px;
+    margin: 20px auto;
+    display: flex;
+    margin-bottom: 200px;
+    @media(max-width: 1200px){
+      display: flex;
+      flex-direction: column;
+  }
+  }
+  
+  .text-container2 {
+    flex: 1;
+    padding: 20px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  
+  h4, h1, p {
+    margin: 0;
+  }
+  
+  h4 {
+    color: $primarycolor;
+  }
+  
+  h1 {
+    color: $primarycolor;
+    @media(max-width: 1200px){
+      font-size: 70px;
+  }
+  }
+  
+  p {
+    color: $primarycolor;
+  }
+  
+  .image-container2 {
+    max-width: 580px;
+    max-height: 690px;
+    overflow: hidden;
+    margin-right: 20px;
+    @media(max-width: 1200px){
+      margin-left: 20px;
+      margin-right:20px ;
+      max-width: 500px;
+      max-height: 690px;
+  }
+  }
+  
+  img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+  }
+
+// dos rectangulos
+
+.rectangle-containerdos {
+    max-width: 1440px;
+    margin: 20px auto;
+    display: flex;
+    // margin-top: 150px;
+    margin-bottom: 200px;
+    @media(max-width: 1200px){
+      display: flex;
+      flex-direction: column;
+      margin-right: 20px;
+
+  }
+  }
+  
+  .rectangledos {
+    max-width: 702px;
+    max-height: 833px;
+    position: relative;
+    position: relative;
+    overflow: cover;
+    margin-bottom: 20px;
+    margin-right: 20px; /* Espacio entre los rectángulos */
+  }
+  
+  img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+  
+  .text-leftdos {
+    width: 100%;
+    padding: 10px;
+    color: #4F6F5B;
+    text-align: left;
+    h4, h1 {
+      margin: 0;
+      color: $primarycolor;
+    }
+    h1{
+      @media(max-width: 1200px){
+        font-size: 70px;
+    }
+    }
+    h4 {
+        color: $primarycolor;
+
+    }
+    h3 {
+        color: $primarycolor;
+
+    }
+  }
+  

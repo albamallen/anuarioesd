@@ -1,0 +1,246 @@
+.top-left-buttonsdetalles {
+    position: absolute;
+    top: 20px;
+    left: 10px;
+    display: flex;
+    flex-direction: row;
+
+    .lineas {
+        margin-right: 10px;
+        background-color: transparent;
+        border: 0px;
+        color: $primarycolor;
+        padding: 10px;
+        padding-top: 20px;
+        font-size: 30px;
+    }
+
+    .sub {
+        margin-right: 10px;
+        background-color: transparent;
+        border: 1px solid;
+        border-radius: 50px;
+        color: $primarycolor;
+        padding: 10px;
+    }
+}
+
+
+.bodydet {
+    font-family: Arial, sans-serif;
+    // display: flex;
+    height: 100vh;
+    margin-top: 200px;
+}
+
+.container {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    @media(max-width: 870px){
+        display: flex;
+        flex-direction: column;
+    }
+
+}
+
+.h1det {
+    margin-left: 150px;
+    @media(max-width: 870px){
+        margin-left: 50px;
+        font-size: 70px;
+    }
+}
+
+.h3det {
+    margin-left: 150px;
+    font-weight: 200;
+    max-width: 430px;
+    @media(max-width: 870px){
+        margin-left: 50px;
+        font-size: 20px;
+    }
+}
+
+.alumno {
+    display: flex;
+    flex-direction: column;
+    // margin-left: 400px;
+    margin-right: 200px;
+    text-align: right;
+    @media(max-width: 870px){
+        margin-left: 100px;
+        margin-right: 0px;
+    }
+}
+
+
+h5 {
+    margin-right: 20px;
+    margin-bottom: 10px;
+    
+}
+
+.h5-light,
+.h5-regular,
+.h5-bold {
+    font-weight: normal;
+    text-align: right;
+}
+
+.h5-light {
+    font-weight: 300;
+    max-width: 300px;
+    text-align: right;
+    font-size: 20px;
+    @media(max-width: 870px){
+        font-size: 18px;
+    }
+}
+
+.h5-regular {
+    font-weight: 400;
+    font-size: 20px;
+    @media(max-width: 870px){
+        font-size: 18px;
+    }
+}
+
+.h5-bold {
+    font-weight: 700;
+    @media(max-width: 870px){
+        font-size: 20px;
+    }
+}
+
+
+
+
+.columns-container {
+    display: flex;
+    margin-top: 20px;
+    margin-left: 150px;
+    gap: 50px;
+    max-width: 1330px;
+    grid-template-columns: repeat(2, 1fr);
+    /* Dos columnas iguales */
+    @media(max-width: 1300px){
+        display: flex;
+        flex-direction: column;
+    }
+    @media(max-width: 870px){
+        margin-left: 50px;
+        font-size: 18px;
+    }
+}
+
+.column {
+    margin: 0 10px;
+    grid-template-rows: repeat(3, auto);
+    max-width: 600px;
+    /* Tres filas automáticas */
+}
+
+.row {
+    display: flex;
+    gap: 50px;
+   
+    h5 {
+        max-width: 300px;
+        margin-right: 10px;
+        font-weight: normal;
+        text-align: left;
+        color: $primarycolor;
+    }
+
+    p {
+        color: black;
+        font-weight: 700;
+        max-width: 300px;
+    }
+}
+
+
+.descripcion {
+    margin-top: 200px;
+    margin-left: 300px;
+    gap: 100px;
+    @media(max-width: 1300px){
+        margin-left: 150px;
+    }
+    @media(max-width: 870px){
+        margin-left: 50px;
+        margin-right: 0px;
+    }
+    
+}
+
+.image-containerdet1 {
+    display: flex;
+    margin-bottom: 100px;
+    gap: 50px;
+    @media(max-width: 1300px){
+        display: flex;
+        flex-direction: column;
+    }
+    .imgdet1 {
+        max-width: 700px;
+        height: auto;
+        margin-right: 20px;
+        @media(max-width: 1300px){
+            max-width: 400px;
+            max-height: 200px;
+            align-items: left;
+        }
+    }
+    .pdet {
+        margin: 0;
+        align-self: flex-end;
+        width: 500px;
+        text-align: left;
+        @media(max-width: 1300px){
+            align-self: flex-start;
+        }
+        @media(max-width: 870px){
+            font-size: 18px;
+            align-self: flex-start;
+        }
+    }
+}
+
+
+.image-containerdet {
+    display: flex;
+    margin-bottom: 50px;
+    gap: 20px;
+    @media(max-width: 1300px){
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+.imgdet {
+    max-width: 600px;
+    height: auto;
+    margin-right: 20px;
+    @media(max-width: 1300px){
+        max-width: 400px;
+        max-height: 200px;
+        align-items: left;
+    }
+}
+
+.pdet {
+    margin: 0;
+    align-self: flex-end;
+    width: 300px;
+    max-width: 400px;
+    margin-right: 40px;
+    @media(max-width: 1300px){
+        align-self: flex-start;
+    }
+    @media(max-width: 870px){
+        font-size: 18px;
+        align-self: flex-start;
+    }
+}
